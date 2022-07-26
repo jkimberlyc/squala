@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <script
+      src="https://kit.fontawesome.com/72268adad8.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <!-- <ul
+      class="nav flex-column d-inline-block min-vh-100 border-right border-black text-end shadow toggle-nav float-start"
+      id="navBar"
+    >
+      <li class="nav-item mb-3">
+        <a class="navbar-brand m-0 p-0" href="#" onclick="toggleNav()">
+          <img
+            src="img/SQUALA-logo.png"
+            alt=""
+            width="400"
+            height="70"
+            class="m-0 p-0"
+            id="logo"
+          />
+        </a>
+      </li>
+      <li class="nav-item mb-3">
+        <a class="nav-link active fs-5 p-1" href="#"
+          >Projects
+          <span class="fs-3 ms-3 me-3" title="Projects"
+            ><i class="fa-solid fa-bars-progress"></i></span
+        ></a>
+      </li>
+      <li class="nav-item mb-3">
+        <a class="nav-link fs-5 pe-1" href="#"
+          >Employees
+          <span class="fs-3 ms-3 me-3"><i class="fa-solid fa-user"></i></span
+        ></a>
+      </li>
+      <li class="nav-item mb-3">
+        <a class="nav-link fs-5 p-1" href="#"
+          >Attendance
+          <span class="fs-2 ms-3 me-3"
+            ><i class="fa-solid fa-clipboard-user"></i></span
+        ></a>
+      </li>
+    </ul> -->
+
+    <div
+      class="d-flex flex-column p-3 bg-white text-dark min-vh-100 position-absolute shadow"
+      style="width: 280px"
+      id="sidebar"
+    >
+      <a class="m-0 p-0" href="#">
+        <img
+          src="img/SQUALA-light.png"
+          alt=""
+          width="100%"
+          height="45"
+          class=""
+          id="logo"
+        />
+      </a>
+      <hr />
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+          <a href="#" class="nav-link active" aria-current="page">
+            <span class="pe-2"><i class="fa-solid fa-gauge"></i></span>
+            Dashboard
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-dark">
+            <span class="pe-2"><i class="fa-solid fa-user"></i></span>
+            Employees
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-dark">
+            <span class="pe-2"><i class="fa-solid fa-calendar-days"></i></span>
+            Attendance
+          </a>
+        </li>
+      </ul>
+      <hr />
+      <div class="dropdown">
+        <a
+          href="#accountSettings"
+          class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+          id="dropdownUser1"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <img
+            src="https://github.com/mdo.png"
+            alt=""
+            width="32"
+            height="32"
+            class="rounded-circle me-2"
+          />
+          <strong class="text-dark">Ben De Leon</strong>
+        </a>
+        <ul
+          class="dropdown-menu dropdown-menu-dark text-small shadow"
+          aria-labelledby="dropdownUser1"
+          id="accountSettings"
+        >
+          <li><a class="dropdown-item" href="#">New project...</a></li>
+          <li><a class="dropdown-item" href="#">Settings</a></li>
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><hr class="dropdown-divider" /></li>
+          <li><a class="dropdown-item" href="#">Sign out</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="text-white fw-bolder" style="font-size: 45px">
+        Project List
+      </div>
+      <hr class="mt-2 mb-3" />
+
+      <div class="d-flex flex-row">
+        <div class="card" style="width: 18rem">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script>
+      function toggleMenu(){
+          document.querySelector("#wrapper").classList.toggle("toggled");
+      }
+      </script> -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
